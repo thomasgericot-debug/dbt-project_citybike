@@ -1,0 +1,172 @@
+version: 2
+sources:
+  - name: thelookecommerce_rawdata
+    tables:
+      - name: citibike_stations
+        columns:
+          - name: station_id
+            data_type: string
+          - name: name
+            data_type: string
+          - name: short_name
+            data_type: string
+          - name: latitude
+            data_type: float64
+          - name: longitude
+            data_type: float64
+          - name: region_id
+            data_type: int64
+          - name: rental_methods
+            data_type: string
+          - name: capacity
+            data_type: int64
+          - name: eightd_has_key_dispenser
+            data_type: boolean
+          - name: num_bikes_available
+            data_type: int64
+          - name: num_bikes_disabled
+            data_type: int64
+          - name: num_docks_available
+            data_type: int64
+          - name: num_docks_disabled
+            data_type: int64
+          - name: is_installed
+            data_type: boolean
+          - name: is_renting
+            data_type: boolean
+          - name: is_returning
+            data_type: boolean
+          - name: eightd_has_available_keys
+            data_type: boolean
+          - name: last_reported
+            data_type: timestamp
+
+      - name: citibike_trips
+        columns:
+          - name: tripduration
+            data_type: int64
+          - name: starttime
+            data_type: datetime
+          - name: stoptime
+            data_type: datetime
+          - name: start_station_id
+            data_type: int64
+          - name: start_station_name
+            data_type: string
+          - name: start_station_latitude
+            data_type: float64
+          - name: start_station_longitude
+            data_type: float64
+          - name: end_station_id
+            data_type: int64
+          - name: end_station_name
+            data_type: string
+          - name: end_station_latitude
+            data_type: float64
+          - name: end_station_longitude
+            data_type: float64
+          - name: bikeid
+            data_type: int64
+          - name: usertype
+            data_type: string
+          - name: birth_year
+            data_type: int64
+          - name: gender
+            data_type: string
+          - name: customer_plan
+            data_type: string
+
+      - name: citystation
+        columns:
+          - name: station_id
+            data_type: string
+          - name: name
+            data_type: string
+          - name: short_name
+            data_type: string
+          - name: latitude
+            data_type: float64
+          - name: longitude
+            data_type: float64
+          - name: region_id
+            data_type: int64
+          - name: rental_methods
+            data_type: string
+          - name: capacity
+            data_type: int64
+          - name: eightd_has_key_dispenser
+            data_type: boolean
+          - name: num_bikes_available
+            data_type: int64
+          - name: num_bikes_disabled
+            data_type: int64
+          - name: num_docks_available
+            data_type: int64
+          - name: num_docks_disabled
+            data_type: int64
+          - name: is_installed
+            data_type: boolean
+          - name: is_renting
+            data_type: boolean
+          - name: is_returning
+            data_type: boolean
+          - name: eightd_has_available_keys
+            data_type: boolean
+          - name: last_reported
+            data_type: timestamp
+
+      - name: citytrip
+        columns:
+          - name: tripduration
+            data_type: int64
+          - name: starttime
+            data_type: datetime
+          - name: stoptime
+            data_type: datetime
+          - name: start_station_id
+            data_type: int64
+          - name: start_station_name
+            data_type: string
+          - name: start_station_latitude
+            data_type: float64
+          - name: start_station_longitude
+            data_type: float64
+          - name: end_station_id
+            data_type: int64
+          - name: end_station_name
+            data_type: string
+          - name: end_station_latitude
+            data_type: float64
+          - name: end_station_longitude
+            data_type: float64
+          - name: bikeid
+            data_type: int64
+          - name: usertype
+            data_type: string
+          - name: birth_year
+            data_type: int64
+          - name: gender
+            data_type: string
+          - name: customer_plan
+            data_type: string
+
+      - name: geolocstation
+        columns:
+          - name: station_id
+            data_type: string
+          - name: lat
+            data_type: float64
+          - name: long
+            data_type: float64
+
+      - name: test
+        columns:
+          - name: start_station_id
+            data_type: int64
+
+      - name: test2
+        columns:
+          - name: station_id
+            data_type: string
+          - name: station_name
+            data_type: string
